@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interneto technologijos 1 (intro + XML).md",
+                "file": "Interneto technologijos 2 (JSON VS XML).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interneto technologijos 1 (intro + XML)"
+              "title": "Interneto technologijos 2 (JSON VS XML)"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interneto technologijos 1 (intro + XML).md",
+                "file": "Interneto technologijos 2 (JSON VS XML).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interneto technologijos 1 (intro + XML).md",
+                "file": "Interneto technologijos 2 (JSON VS XML).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interneto technologijos 1 (intro + XML).md",
+                "file": "Interneto technologijos 2 (JSON VS XML).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,8 @@
   },
   "active": "265eafcf33633c89",
   "lastOpenFiles": [
-    "Interneto technologijos 1 (intro + XML).md"
+    "Pasted image 20260915183752.png",
+    "Interneto technologijos 1 (intro + XML).md",
+    "Interneto technologijos 2 (JSON VS XML).md"
   ]
 }
