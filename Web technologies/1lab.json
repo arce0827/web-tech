@@ -1,0 +1,218 @@
+
+
+
+{
+    "universitetas": {
+        "universiteto_pavadinimas": "Vilniaus universitetas",
+        "fakultetas": [
+            {
+                "fakulteto_pavadinimas": "Fizikos fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Fizika",
+                        "erasmus_partneris": {
+                            "salis": "Vokietija",
+                            "erasmus_universitetas": "Humboldt Universität"
+                        },
+                        "dalykas": [
+                            {
+                                "kodas": "FIZ-101",
+                                "dalyko_pavadinimas": "Termodinamika",
+                                "destytojas": {
+                                    "laipsnis": "prof. dr.",
+                                    "vardas": "Jonas",
+                                    "pavarde": "Jonaitis"
+                                },
+                                "kreditai": 5,
+                                "studentu_pazymiu_vidurkis": 9.85
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "fakulteto_pavadinimas": "Ekonomikos ir verslo administravimo fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Apskaita ir auditas",
+                        "erasmus_partneris": {
+                            "salis": "Prancūzija",
+                            "erasmus_universitetas": "HEC Paris"
+                        },
+                        "dalykas": [
+                            {
+                                "kodas": "AK-101",
+                                "dalyko_pavadinimas": "Finansų apskaita",
+                                "destytojas": {
+                                    "laipsnis": "prof. dr.",
+                                    "vardas": "Jolanta",
+                                    "pavarde": "Jonaitytė"
+                                },
+                                "kreditai": 10,
+                                "studentu_pazymiu_vidurkis": 8.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "fakulteto_pavadinimas": "Filosofijos fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Filosofija",
+                        "dalykas": [
+                            {
+                                "kodas": "FIL-101",
+                                "dalyko_pavadinimas": "Filosofijos pagrindai",
+                                "destytojas": {
+                                    "laipsnis": "habil. dr.",
+                                    "vardas": "Jonas",
+                                    "pavarde": "Jonaitis"
+                                },
+                                "kreditai": 6,
+                                "studentu_pazymiu_vidurkis": 5.15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "fakulteto_pavadinimas": "Istorijos fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Istorijos studijų programa",
+                        "dalykas": [
+                            {
+                                "kodas": "IS-101",
+                                "dalyko_pavadinimas": "Istorijos pradmenys",
+                                "destytojas": {
+                                    "laipsnis": "prakt.",
+                                    "vardas": "Jonas",
+                                    "pavarde": "Jonaitis"
+                                },
+                                "kreditai": 6,
+                                "studentu_pazymiu_vidurkis": 8.0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "fakulteto_pavadinimas": "Komunikacijos fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Leidyba ir reklama",
+                        "erasmus_partneris": {
+                            "salis": "Nyderlandai",
+                            "erasmus_universitetas": "University of Amsterdam"
+                        },
+                        "dalykas": [
+                            {
+                                "kodas": "LR-101",
+                                "dalyko_pavadinimas": "Reklamos pagrindai",
+                                "destytojas": {
+                                    "laipsnis": "prof. dr.",
+                                    "vardas": "Jonas",
+                                    "pavarde": "Jonaitis"
+                                },
+                                "kreditai": 6,
+                                "studentu_pazymiu_vidurkis": 9.21
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "fakulteto_pavadinimas": "Matematikos ir informatikos fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Programų sistemos",
+                        "dalykas": [
+                            {
+                                "kodas": "PS-101",
+                                "dalyko_pavadinimas": "Objektinis programavimas",
+                                "destytojas": {
+                                    "laipsnis": "habil. dr.",
+                                    "vardas": "Jonas",
+                                    "pavarde": "Jonaitis"
+                                },
+                                "kreditai": 6,
+                                "studentu_pazymiu_vidurkis": 7.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "fakulteto_pavadinimas": "Medicinos fakultetas",
+                "fakulteto_isteigimo_data": "1990-01-01",
+                "adresas": {
+                    "gatve": "Studentų g. 39",
+                    "miestas": "Vilnius",
+                    "pasto_kodas": "LT-08106"
+                },
+                "programa": [
+                    {
+                        "lygis": "bakalauras",
+                        "studiju_programos_pavadinimas": "Akušerija",
+                        "dalykas": [
+                            {
+                                "kodas": "AK-101",
+                                "dalyko_pavadinimas": "Anatomija",
+                                "destytojas": {
+                                    "laipsnis": "prof. dr.",
+                                    "vardas": "Jonas",
+                                    "pavarde": "Jonaitis"
+                                },
+                                "kreditai": 6,
+                                "studentu_pazymiu_vidurkis": 8.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
