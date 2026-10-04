@@ -6,171 +6,171 @@ JSON:
 Lengvesnė ir greitesnė duomenų mainams tarp web aplikacijų ir serverių, ypač kai reikia perduoti duomenis per API. Pavyzdžiui, RESTful API atsakymai arba konfigūracijos failai mažoms programoms / mobiliems appsams.
 -->
 <?xml version="1.0" encoding="UTF-8"?>
-<universitetas 
-    xmlns:xs="https://www.vu.lt/universitetas"
+<universitetas
+    xmlns="https://www.vu.lt/universitetas"
     xmlns:erasmus="https://erasmus-plus.ec.europa.eu/lt/about-erasmus">
-    <xs:universiteto_pavadinimas>Vilniaus universitetas</xs:universiteto_pavadinimas>
+    <universiteto_pavadinimas>Vilniaus universitetas</universiteto_pavadinimas>
     
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Fizikos fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-        <xs:studiju_programos_pavadinimas>Fizika</xs:studiju_programos_pavadinimas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Fizikos fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+        <studiju_programos_pavadinimas>Fizika</studiju_programos_pavadinimas>
         <erasmus:partneris salis="Vokietija">
             <erasmus:universitetas>Humboldt Universität</erasmus:universitetas>
         </erasmus:partneris>
-            <xs:dalykas kodas="FIZ-101">
-                <xs:dalyko_pavadinimas>Termodinamika</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="prof. dr.">
-                    <xs:vardas>Jonas</xs:vardas>
-                    <xs:pavarde>Jonaitis</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>5</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>9.85</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas>
-        </xs:programa>
-    </xs:fakultetas>
+            <dalykas kodas="FIZ-101">
+                <dalyko_pavadinimas>Termodinamika</dalyko_pavadinimas>
+                <destytojas laipsnis="prof. dr.">
+                    <vardas>Jonas</vardas>
+                    <pavarde>Jonaitis</pavarde>
+                </destytojas>
+                <kreditai>5</kreditai>
+                <studentu_pazymiu_vidurkis>9.85</studentu_pazymiu_vidurkis>
+            </dalykas>
+        </programa>
+    </fakultetas>
 
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Ekonomikos ir verslo administravimo fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-        <xs:studiju_programos_pavadinimas>Apskaita ir auditas</xs:studiju_programos_pavadinimas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Ekonomikos ir verslo administravimo fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+        <studiju_programos_pavadinimas>Apskaita ir auditas</studiju_programos_pavadinimas>
         <erasmus:partneris salis="Prancūzija">
             <erasmus:universitetas>HEC Paris</erasmus:universitetas>
         </erasmus:partneris>    
-            <xs:dalykas kodas="AA-101">
-                <xs:dalyko_pavadinimas>Finansų apskaita</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="prof. dr.">
-                    <xs:vardas>Jolanta</xs:vardas>
-                    <xs:pavarde>Jonaitytė</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>10</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>8.75</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas>   
-        </xs:programa>
-    </xs:fakultetas>
+            <dalykas kodas="AA-101">
+                <dalyko_pavadinimas>Finansų apskaita</dalyko_pavadinimas>
+                <destytojas laipsnis="prof. dr.">
+                    <vardas>Jolanta</vardas>
+                    <pavarde>Jonaitytė</pavarde>
+                </destytojas>
+                <kreditai>10</kreditai>
+                <studentu_pazymiu_vidurkis>8.75</studentu_pazymiu_vidurkis>
+            </dalykas>   
+        </programa>
+    </fakultetas>
 
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Filosofijos fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-        <xs:studiju_programos_pavadinimas>Filosofija</xs:studiju_programos_pavadinimas>
-            <xs:dalykas kodas="FIL-101">
-                <xs:dalyko_pavadinimas>Filosofijos pagrindai</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="habil. dr.">
-                    <xs:vardas>Jonas</xs:vardas>
-                    <xs:pavarde>Jonaitis</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>6</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>5.15</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas>    
-        </xs:programa>
-    </xs:fakultetas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Filosofijos fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+        <studiju_programos_pavadinimas>Filosofija</studiju_programos_pavadinimas>
+            <dalykas kodas="FIL-101">
+                <dalyko_pavadinimas>Filosofijos pagrindai</dalyko_pavadinimas>
+                <destytojas laipsnis="habil. dr.">
+                    <vardas>Jonas</vardas>
+                    <pavarde>Jonaitis</pavarde>
+                </destytojas>
+                <kreditai>6</kreditai>
+                <studentu_pazymiu_vidurkis>5.15</studentu_pazymiu_vidurkis>
+            </dalykas>    
+        </programa>
+    </fakultetas>
 
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Istorijos fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-            <xs:studiju_programos_pavadinimas>Istorijos studijų programa</xs:studiju_programos_pavadinimas>
-            <xs:dalykas kodas="IS-101">
-                <xs:dalyko_pavadinimas>Istorijos pradmenys</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="prakt.">
-                    <xs:vardas>Jonas</xs:vardas>
-                    <xs:pavarde>Jonaitis</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>6</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>8.0</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas>
-        </xs:programa>
-    </xs:fakultetas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Istorijos fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+            <studiju_programos_pavadinimas>Istorijos studijų programa</studiju_programos_pavadinimas>
+            <dalykas kodas="IS-101">
+                <dalyko_pavadinimas>Istorijos pradmenys</dalyko_pavadinimas>
+                <destytojas laipsnis="prakt.">
+                    <vardas>Jonas</vardas>
+                    <pavarde>Jonaitis</pavarde>
+                </destytojas>
+                <kreditai>6</kreditai>
+                <studentu_pazymiu_vidurkis>8.0</studentu_pazymiu_vidurkis>
+            </dalykas>
+        </programa>
+    </fakultetas>
 
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Komunikacijos fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-            <xs:studiju_programos_pavadinimas>Leidyba ir reklama</xs:studiju_programos_pavadinimas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Komunikacijos fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+            <studiju_programos_pavadinimas>Leidyba ir reklama</studiju_programos_pavadinimas>
             <erasmus:partneris salis="Nyderlandai">
                 <erasmus:universitetas>University of Amsterdam</erasmus:universitetas>
             </erasmus:partneris>
-            <xs:dalykas kodas="LR-101">
-                <xs:dalyko_pavadinimas>Reklamos pagrindai</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="prof. dr.">
-                    <xs:vardas>Jonas</xs:vardas>
-                    <xs:pavarde>Jonaitis</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>6</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>9.21</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas> 
-        </xs:programa>
-    </xs:fakultetas>
+            <dalykas kodas="LR-101">
+                <dalyko_pavadinimas>Reklamos pagrindai</dalyko_pavadinimas>
+                <destytojas laipsnis="prof. dr.">
+                    <vardas>Jonas</vardas>
+                    <pavarde>Jonaitis</pavarde>
+                </destytojas>
+                <kreditai>6</kreditai>
+                <studentu_pazymiu_vidurkis>9.21</studentu_pazymiu_vidurkis>
+            </dalykas> 
+        </programa>
+    </fakultetas>
 
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Matematikos ir informatikos fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-            <xs:studiju_programos_pavadinimas>Programų sistemos</xs:studiju_programos_pavadinimas>
-            <xs:dalykas kodas="PS-101">
-                <xs:dalyko_pavadinimas>Objektinis programavimas</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="habil. dr.">
-                    <xs:vardas>Jonas</xs:vardas>
-                    <xs:pavarde>Jonaitis</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>6</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>7.75</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas>
-        </xs:programa>
-    </xs:fakultetas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Matematikos ir informatikos fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+            <studiju_programos_pavadinimas>Programų sistemos</studiju_programos_pavadinimas>
+            <dalykas kodas="PS-101">
+                <dalyko_pavadinimas>Objektinis programavimas</dalyko_pavadinimas>
+                <destytojas laipsnis="habil. dr.">
+                    <vardas>Jonas</vardas>
+                    <pavarde>Jonaitis</pavarde>
+                </destytojas>
+                <kreditai>6</kreditai>
+                <studentu_pazymiu_vidurkis>7.75</studentu_pazymiu_vidurkis>
+            </dalykas>
+        </programa>
+    </fakultetas>
     
-    <xs:fakultetas>
-        <xs:fakulteto_pavadinimas>Medicinos fakultetas</xs:fakulteto_pavadinimas>
-        <xs:fakulteto_isteigimo_data>1990-01-01</xs:fakulteto_isteigimo_data>
-        <xs:adresas>
-            <xs:gatve>Studentų g. 39</xs:gatve>
-            <xs:miestas>Vilnius</xs:miestas>
-            <xs:pasto_kodas>LT-08106</xs:pasto_kodas>
-        </xs:adresas>
-        <xs:programa lygis="bakalauras">
-        <xs:studiju_programos_pavadinimas>Akušerija</xs:studiju_programos_pavadinimas>
-            <xs:dalykas kodas="AK-101">
-                <xs:dalyko_pavadinimas>Anatomija</xs:dalyko_pavadinimas>
-                <xs:destytojas laipsnis="prof. dr.">
-                    <xs:vardas>Jonas</xs:vardas>
-                    <xs:pavarde>Jonaitis</xs:pavarde>
-                </xs:destytojas>
-                <xs:kreditai>6</xs:kreditai>
-                <xs:studentu_pazymiu_vidurkis>8.5</xs:studentu_pazymiu_vidurkis>
-            </xs:dalykas>    
-        </xs:programa>
-    </xs:fakultetas>
+    <fakultetas>
+        <fakulteto_pavadinimas>Medicinos fakultetas</fakulteto_pavadinimas>
+        <fakulteto_isteigimo_data>1990-01-01</fakulteto_isteigimo_data>
+        <adresas>
+            <gatve>Studentų g. 39</gatve>
+            <miestas>Vilnius</miestas>
+            <pasto_kodas>LT-08106</pasto_kodas>
+        </adresas>
+        <programa lygis="bakalauras">
+            <studiju_programos_pavadinimas>Akušerija</studiju_programos_pavadinimas>
+            <dalykas kodas="AK-101">
+                <dalyko_pavadinimas>Anatomija</dalyko_pavadinimas>
+                <destytojas laipsnis="prof. dr.">
+                    <vardas>Jonas</vardas>
+                    <pavarde>Jonaitis</pavarde>
+                </destytojas>
+                <kreditai>6</kreditai>
+                <studentu_pazymiu_vidurkis>8.5</studentu_pazymiu_vidurkis>
+            </dalykas>    
+        </programa>
+    </fakultetas>
 </universitetas>
