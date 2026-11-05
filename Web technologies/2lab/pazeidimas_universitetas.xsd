@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Apribojimu išvestas tipas gali aprašyti tik tuos dokumentus,
+  kuriuos leidžia bazinis tipas (jo reikšmių aibė yra bazinio poaibis).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:uni="https://www.vu.lt/universitetas"
+           targetNamespace="https://www.vu.lt/universitetas"
+           elementFormDefault="qualified">
+
+  <xs:complexType name="AsmuoType">
+    <xs:sequence>
+      <xs:element name="vardas"   type="xs:string"/>
+      <xs:element name="pavarde"  type="xs:string"/>
+      <xs:element name="elpastas" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+<!-- KLAIDINGAS variantas: apribojimu pridedamas NAUJAS elementas
+      katedra, kurio bazinis tipas AsmuoType neleidžia. Dokumentas su
+      <katedra> būtų teisingas pagal išvestą tipą, bet neteisingas pagal
+      bazinį -> schema neteisinga-->
+  <xs:complexType name="DestytojasBlogasType">
+    <xs:complexContent>
+      <xs:restriction base="uni:AsmuoType">
+        <xs:sequence>
+          <xs:element name="vardas"   type="xs:string"/>
+          <xs:element name="pavarde"  type="xs:string"/>
+          <xs:element name="elpastas" type="xs:string" minOccurs="0"/>
+          <xs:element name="katedra"  type="xs:string"/>
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+<!-- PATAISYMAS būtu toks, kad nauji elementai pridedami extension'u.
+      (Jei naujų elementų nereikia, apribojimas galetu siaurinti pradini tipa) -->
+  <xs:complexType name="DestytojasGerasType">
+    <xs:complexContent>
+      <xs:extension base="uni:AsmuoType">
+        <xs:sequence>
+          <xs:element name="katedra" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+</xs:schema>

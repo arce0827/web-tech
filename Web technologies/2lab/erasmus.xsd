@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://erasmus-plus.ec.europa.eu/lt/about-erasmus"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:element name="partneris">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="universitetas" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="salis" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

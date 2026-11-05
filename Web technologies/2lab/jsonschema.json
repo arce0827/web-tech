@@ -1,0 +1,202 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://www.vu.lt/universitetas/1lab.schema.json",
+    "title": "Universiteto struktūra",
+    "description": "JSON Schema (draft-wright-json-schema-01) dokumentui 1lab.json",
+    "type": "object",
+    "properties": {
+        "universitetas": { "$ref": "#/definitions/universitetas" }
+    },
+    "required": ["universitetas"],
+    "additionalProperties": false,
+
+    "definitions": {
+
+        "universitetas": {
+            "type": "object",
+            "properties": {
+                "universiteto_pavadinimas": { "$ref": "#/definitions/pavadinimas" },
+                "fakultetas": {
+                    "type": "array",
+                    "items": { "$ref": "#/definitions/fakultetas" },
+                    "minItems": 1,
+                    "uniqueItems": true
+                }
+            },
+            "required": ["universiteto_pavadinimas", "fakultetas"],
+            "additionalProperties": false
+        },
+
+        "pavadinimas": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 200
+        },
+
+        "fakultetas": {
+            "type": "object",
+            "properties": {
+                "fakulteto_pavadinimas": { "$ref": "#/definitions/pavadinimas" },
+                "fakulteto_isteigimo_data": { "$ref": "#/definitions/data" },
+                "adresas": { "$ref": "#/definitions/adresas" },
+                "programa": {
+                    "type": "array",
+                    "items": { "$ref": "#/definitions/programa" },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "fakulteto_pavadinimas",
+                "fakulteto_isteigimo_data",
+                "adresas",
+                "programa"
+            ],
+            "additionalProperties": false
+        },
+
+        "data": {
+            "type": "string",
+            "format": "date",
+            "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+        },
+
+        "adresas": {
+            "type": "object",
+            "properties": {
+                "gatve":       { "$ref": "#/definitions/pavadinimas" },
+                "miestas":     { "$ref": "#/definitions/pavadinimas" },
+                "pasto_kodas": { "$ref": "#/definitions/pastoKodas" }
+            },
+            "required": ["gatve", "miestas", "pasto_kodas"],
+            "additionalProperties": false
+        },
+
+        "pastoKodas": {
+            "type": "string",
+            "pattern": "^LT-\\d{5}$"
+        },
+
+        "programa": {
+            "type": "object",
+            "properties": {
+                "lygis": { "$ref": "#/definitions/lygis" },
+                "studiju_programos_pavadinimas": { "$ref": "#/definitions/pavadinimas" },
+                "erasmus_partneris": { "$ref": "#/definitions/erasmusPartneris" },
+                "dalykas": {
+                    "type": "array",
+                    "items": { "$ref": "#/definitions/dalykas" },
+                    "minItems": 1
+                }
+            },
+            "required": ["lygis", "studiju_programos_pavadinimas", "dalykas"],
+            "additionalProperties": false
+        },
+
+        "lygis": {
+            "enum": ["bakalauras", "magistras", "doktorantas"]
+        },
+
+        "erasmusPartneris": {
+            "type": "object",
+            "properties": {
+                "salis":                 { "$ref": "#/definitions/pavadinimas" },
+                "erasmus_universitetas": { "$ref": "#/definitions/pavadinimas" }
+            },
+            "required": ["salis", "erasmus_universitetas"],
+            "additionalProperties": false
+        },
+
+        "dalykas": {
+            "type": "object",
+            "properties": {
+                "kodas": { "$ref": "#/definitions/dalykoKodas" },
+                "dalyko_pavadinimas": { "$ref": "#/definitions/pavadinimas" },
+                "destytojas": { "$ref": "#/definitions/destytojas" },
+                "kreditai": { "$ref": "#/definitions/kreditai" },
+                "studentu_pazymiu_vidurkis": { "$ref": "#/definitions/vidurkis" }
+            },
+            "required": [
+                "kodas",
+                "dalyko_pavadinimas",
+                "destytojas",
+                "kreditai",
+                "studentu_pazymiu_vidurkis"
+            ],
+            "additionalProperties": false
+        },
+
+        "dalykoKodas": {
+            "type": "string",
+            "pattern": "^[A-Z]{2,3}-\\d{3}$"
+        },
+
+        "kreditai": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+        },
+
+        "vidurkis": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 10
+        },
+
+        "vardas": {
+            "type": "string",
+            "pattern": "^[A-ZĄČĘĖĮŠŲŪŽ][a-ząčęėįšųūž]+$"
+        },
+
+        "pavarde": {
+            "anyOf": [
+                {
+                    "description": "viena pavardė",
+                    "type": "string",
+                    "pattern": "^[A-ZĄČĘĖĮŠŲŪŽ][a-ząčęėįšųūž]+$"
+                },
+                {
+                    "description": "dviguba pavardė su brūkšneliu",
+                    "type": "string",
+                    "pattern": "^[A-ZĄČĘĖĮŠŲŪŽ][a-ząčęėįšųūž]+-[A-ZĄČĘĖĮŠŲŪŽ][a-ząčęėįšųūž]+$"
+                }
+            ]
+        },
+
+        "asmuo": {
+            "type": "object",
+            "properties": {
+                "vardas":  { "$ref": "#/definitions/vardas" },
+                "pavarde": { "$ref": "#/definitions/pavarde" }
+            },
+            "required": ["vardas", "pavarde"]
+        },
+
+        "moksloLaipsnis": {
+            "enum": ["prof. dr.", "habil. dr.", "doc. dr.", "dr."]
+        },
+
+        "praktikoLaipsnis": {
+            "enum": ["lekt.", "prakt."]
+        },
+
+        "laipsnis": {
+            "oneOf": [
+                { "$ref": "#/definitions/moksloLaipsnis" },
+                { "$ref": "#/definitions/praktikoLaipsnis" }
+            ]
+        },
+
+        "destytojas": {
+            "description": "Asmens schemos praplėtimas: asmuo + laipsnis",
+            "allOf": [
+                { "$ref": "#/definitions/asmuo" },
+                {
+                    "properties": {
+                        "laipsnis": { "$ref": "#/definitions/laipsnis" }
+                    },
+                    "required": ["laipsnis"]
+                }
+            ]
+        }
+    }
+}
