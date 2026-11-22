@@ -1,0 +1,29 @@
+### Visi fakultetai
+GET http://localhost:3000/api/fakultetai
+
+### Vienas fakultetas
+GET http://localhost:3000/api/fakultetai/2
+
+### Neegzistuojantis (turi būti 404)
+GET http://localhost:3000/api/fakultetai/999
+
+### Naujas fakultetas
+POST http://localhost:3000/api/fakultetai
+Content-Type: application/json
+
+{
+    "fakulteto_pavadinimas": "Chemijos fakultetas",
+    "fakulteto_isteigimo_data": "2000-09-01",
+    "adresas": { "gatve": "Naugarduko g. 24", "miestas": "Vilnius", "pasto_kodas": "LT-03225" },
+    "programa": [{
+        "lygis": "bakalauras",
+        "studiju_programos_pavadinimas": "Chemija",
+        "dalykas": [{
+            "kodas": "CH-101",
+            "dalyko_pavadinimas": "Bendroji chemija",
+            "destytojas": { "laipsnis": "doc. dr.", "vardas": "Petras", "pavarde": "Petraitis" },
+            "kreditai": 5,
+            "studentu_pazymiu_vidurkis": 8.4
+        }]
+    }]
+}
