@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/fakultetai
 
 ### Vienas fakultetas
-GET http://localhost:3000/api/fakultetai/2
+GET http://localhost:3000/api/fakultetai/8
 
 ### Neegzistuojantis (turi būti 404)
 GET http://localhost:3000/api/fakultetai/999
@@ -27,3 +27,99 @@ Content-Type: application/json
         }]
     }]
 }
+
+### 1. blogos/neteisingos (pattern, minLength, format, minItems)
+POST http://localhost:3000/api/fakultetai
+Content-Type: application/json
+
+{
+    "fakulteto_pavadinimas": "X",
+    "fakulteto_isteigimo_data": "2000-13-45",
+    "adresas": { "gatve": "Gatvė 1", "miestas": "Vilnius", "pasto_kodas": "12345" },
+    "programa": []
+}
+
+### 2. truksta privalomu lauku
+POST http://localhost:3000/api/fakultetai
+Content-Type: application/json
+
+{
+    "fakulteto_pavadinimas": "Chemijos fakultetas",
+    "fakulteto_isteigimo_data": "2000-09-01"
+}
+
+### 3. klaidos vidiniuose laukuose (enum, pattern, min/max)
+POST http://localhost:3000/api/fakultetai
+Content-Type: application/json
+
+{
+    "fakulteto_pavadinimas": "Chemijos fakultetas",
+    "fakulteto_isteigimo_data": "2000-09-01",
+    "adresas": { "gatve": "Naugarduko g. 24", "miestas": "Vilnius", "pasto_kodas": "LT-03225" },
+    "programa": [{
+        "lygis": "profesionalas",
+        "studiju_programos_pavadinimas": "Chemija",
+        "dalykas": [{
+            "kodas": "ch-101",
+            "dalyko_pavadinimas": "Bendroji chemija",
+            "destytojas": { "laipsnis": "studentas", "vardas": "petras", "pavarde": "Petraitis" },
+            "kreditai": 100,
+            "studentu_pazymiu_vidurkis": 11
+        }]
+    }]
+}
+
+### 4. neleistinas papildomas laukas
+POST http://localhost:3000/api/fakultetai
+Content-Type: application/json
+
+{
+    "fakulteto_pavadinimas": "Chemijos fakultetas",
+    "fakulteto_isteigimo_data": "2000-09-01",
+    "adresas": { "gatve": "Naugarduko g. 24", "miestas": "Vilnius", "pasto_kodas": "LT-03225" },
+    "dekanas": "Jonas Jonaitis",
+    "programa": [{
+        "lygis": "bakalauras",
+        "studiju_programos_pavadinimas": "Chemija",
+        "dalykas": [{
+            "kodas": "CH-101",
+            "dalyko_pavadinimas": "Bendroji chemija",
+            "destytojas": { "laipsnis": "doc. dr.", "vardas": "Petras", "pavarde": "Petraitis" },
+            "kreditai": 5,
+            "studentu_pazymiu_vidurkis": 8.4
+        }]
+    }]
+}
+
+### 5. neteisingas tipas
+POST http://localhost:3000/api/fakultetai
+Content-Type: application/json
+
+{
+    "fakulteto_pavadinimas": "Chemijos fakultetas",
+    "fakulteto_isteigimo_data": "2000-09-01",
+    "adresas": { "gatve": "Naugarduko g. 24", "miestas": "Vilnius", "pasto_kodas": "LT-03225" },
+    "programa": [{
+        "lygis": "bakalauras",
+        "studiju_programos_pavadinimas": "Chemija",
+        "dalykas": [{
+            "kodas": "CH-101",
+            "dalyko_pavadinimas": "Bendroji chemija",
+            "destytojas": { "laipsnis": "doc. dr.", "vardas": "Petras", "pavarde": "Petraitis" },
+            "kreditai": "penki",
+            "studentu_pazymiu_vidurkis": 8.4
+        }]
+    }]
+}
+
+###
+DELETE http://localhost:3000/api/fakultetai/1
+
+###
+DELETE http://localhost:3000/api/fakultetai/8.1asda
+
+###
+DELETE http://localhost:3000/api/fakultetai/999
+
+###
+DELETE http://localhost:3000/api/fakultetai/abc
